@@ -1,0 +1,14 @@
+{
+  "name": "fis3-avalon",
+  "version": "1.0.0",
+  "description": "develope avalon with fis3",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hiufan@qq.com",
+  "license": "MIT",
+  "dependencies": {
+    "qwest": "^4.4.5"
+  }
+}

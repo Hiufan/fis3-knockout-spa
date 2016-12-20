@@ -1,0 +1,8 @@
+<div id="page1">
+    <p>page1</p>
+    <ul data-bind="foreach: items">
+        <li>
+            <a data-bind="text: title, attr:{href: 'https://cnodejs.org/topic/' + id, target: '_blank'}"></a>
+        </li>
+    </ul>
+</div>

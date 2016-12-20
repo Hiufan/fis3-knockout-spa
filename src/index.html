@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!--导航菜单-->
+            <ul class="nav nav-tabs" data-bind="foreach: pages">
+                <li data-bind="css: { active: $data == $root.chosenPageId()}">
+                    <a data-bind="text: $data, attr: {href: '/#/' + $data}"></a>
+                </li>
+            </ul>
+            <!--页面容器-->
+            <div class="wrapper" data-bind='component: {
+                name: currentView
+            }'></div>
+        </div>
+        <script src="main.js"></script>
+    </body>    
+</html>
