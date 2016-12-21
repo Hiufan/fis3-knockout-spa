@@ -1,10 +1,11 @@
 var ko = require('knockout');
+require('knockout-postbox');
 var router = require('router');
 
 function appViewModel() {
     // Data
     var self = this;
-    self.pages = ['page0', 'page1', 'page2', 'page3'];
+    // self.pages = ['最新', '最热'];
     self.chosenPageId = ko.observable();
     self.chosenPageData = ko.observable();
     self.currentView = ko.observable('page0');
@@ -16,4 +17,3 @@ function appViewModel() {
 var vm = new appViewModel(); 
 
 ko.applyBindings(vm);
-

@@ -4,20 +4,15 @@
         <title>first example</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="//cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style/email.css">
+        <style>
+            .pure-g {letter-spacing: 0;}
+        </style>
     </head>
     <body>
-        <div class="container">
-            <!--导航菜单-->
-            <ul class="nav nav-tabs" data-bind="foreach: pages">
-                <li data-bind="css: { active: $data == $root.chosenPageId()}">
-                    <a data-bind="text: $data, attr: {href: '/#/' + $data}"></a>
-                </li>
-            </ul>
-            <!--页面容器-->
-            <div class="wrapper" data-bind='component: {
-                name: currentView
-            }'></div>
+        <div id="layout" class="content pure-g">
+            <div data-bind="component: 'home'"></div>
         </div>
         <script src="main.js"></script>
     </body>    

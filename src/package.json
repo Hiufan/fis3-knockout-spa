@@ -9,6 +9,10 @@
   "author": "Hiufan@qq.com",
   "license": "MIT",
   "dependencies": {
+    "director": "^1.2.8",
+    "fis3-preprocessor-browserify": "^1.0.4",
+    "knockout": "^3.4.1",
+    "knockout-postbox": "^0.5.2",
     "qwest": "^4.4.5"
   }
 }

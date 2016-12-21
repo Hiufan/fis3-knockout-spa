@@ -1,4 +1,7 @@
-<div id="page0">
-    <p>page0</p>
-    <banner></banner>
-</div>
+  <ul data-bind="foreach: messages">
+    <li>
+      <span data-bind="text: $data.sender"></span>:<span data-bind="text: $data.text"></span>
+    </li>
+  </ul>
+  <input type="text" data-bind="value:message"></input>
+  <button data-bind="event:{click:send}">Send</button>

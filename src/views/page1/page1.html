@@ -1,8 +1,7 @@
-<div id="page1">
-    <p>page1</p>
-    <ul data-bind="foreach: items">
-        <li>
-            <a data-bind="text: title, attr:{href: 'https://cnodejs.org/topic/' + id, target: '_blank'}"></a>
-        </li>
-    </ul>
-</div>
+<ul data-bind="foreach: messages">
+<li>
+    <span data-bind="text: $data.sender"></span>:<span data-bind="text: $data.text"></span>
+</li>
+</ul>
+<input type="text" data-bind="value:message"></input>
+<button data-bind="event:{click:send}">Send</button>
